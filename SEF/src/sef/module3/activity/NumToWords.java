@@ -16,7 +16,7 @@ public class NumToWords {
 		
 		
 				
-		int i = 8;
+		int i = 10;
 		String numText = "";
 
 		switch(i) {
@@ -32,6 +32,12 @@ public class NumToWords {
 		case 5:
 			numText = "FIVE";break;
 		// complete the code.
+		case 6: 
+			numText = "SIX";break;
+		case 7:
+			numText = "SEVEN";break;
+		case 8:
+			numText = "Eight";break;
 		default:
 			numText = "NUMBER " + i;
 		}
