@@ -7,7 +7,10 @@ public class CustomExceptionActivityTest {
 
 	//1 - Type main method and call validateUser() from it.
 	//Call this method with different names to test it 
-
+	public static void main(String[] args) {
+		CustomExceptionActivityTest obj = new CustomExceptionActivityTest();
+		obj.validateUser("John"); 
+	}
 
 void validateUser(String name)
 {
