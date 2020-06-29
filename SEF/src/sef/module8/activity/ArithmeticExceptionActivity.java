@@ -1,8 +1,9 @@
 package sef.module8.activity;
 // Needs to be completed
+
 public class ArithmeticExceptionActivity {
 	//1 - Type main method and call catchMe with 10 and 0
-	public static void main (int [] args) { 
+	public static void main (String[] args) { 
 		ArithmeticExceptionActivity obj = new ArithmeticExceptionActivity();
 		obj.catchMe(10, 0);
 	}
@@ -25,6 +26,6 @@ try {
 	//4- try to call catchMe with 10 and 2 now and see which messages get printed. 
 	
 }
-
 }
+
  

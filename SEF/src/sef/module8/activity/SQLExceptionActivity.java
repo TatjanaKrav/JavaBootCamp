@@ -30,7 +30,7 @@ public class SQLExceptionActivity {
 	}catch(ClassNotFoundException e) {
 	System.out.println("Required class is not found");
 	}
-	catch (SQLException ex) {
+	catch (SQLException e) {
 	System.out.println("SQL connection failed");
 	}
 }
