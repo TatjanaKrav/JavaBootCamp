@@ -1,11 +1,28 @@
 package sef.module17.activity;
 // Complete Code
-class Employee {
+class Employee extends EmployeeJDBC2 {
 
 	String id;
 	String firstName;
 	String lastName;
 	int salary;
+	
+	    public Employee(){
+	    	this.id = "0";
+	    	this.firstName = "Unknown";
+	    	this.lastName = "Unknown";
+	    	this.salary = 0;
+	    }
+
+	    
+	    public Employee (String id, String firstName, String lastName, int salary) {
+	    	
+	    	this.id = id;
+	    	this.firstName = firstName;
+	    	this.lastName = lastName;
+	    	this.salary = salary;
+	    	}
+	
 	public String getId() {
 		return id;
 	}

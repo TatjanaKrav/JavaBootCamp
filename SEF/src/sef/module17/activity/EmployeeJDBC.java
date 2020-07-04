@@ -12,9 +12,9 @@ public class EmployeeJDBC {
 	public Connection createConnection()
 	{
 		Connection con=null;
-		String url = "jdbc:mysql://localhost/activity";
+		String url = "jdbc:mysql://localhost:3306/employees"; 
 		String user = "root";
-		String pass = "adbd1234";
+		String pass = "tanjandrej";
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -37,16 +37,26 @@ public class EmployeeJDBC {
 		Employee emp=null;
 		try {
 		// 1 - Create a PreparedStatement with a query
-		
+		String query = "SELECT * FROM EMPLOYEES WHERE ID = '2a'";
+		PreparedStatement st = con.prepareStatement(query);
 
 		// 2 - Search for the given id
 		
 
 		// 3 - Execute this query
-		
+		ResultSet employeeById = st.executeQuery(query);
 		
 		// 4 - If resultset is not null, then initialize emp object with data 
-		
+		if (employeeById != null) {
+			String currentemployee = "";
+			currentemployee = 	employeeById.getString(1) + " : " + 	 
+					employeeById.getString(2) + " : " +
+					employeeById.getString(3) + " : " +
+					employeeById.getInt(4);
+			System.out.println(currentemployee);
+		}else {
+			System.out.println("No such employee");
+		}
 		con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -63,15 +73,23 @@ public class EmployeeJDBC {
 		
 		try {
 		// 1 - Create a PreparedStatement with a query
-		
+		String query = "SELECT * FROM EMPLOYEES WHERE NAME= '\"+Abbey+\"'";
+		PreparedStatement st = con.prepareStatement(query);
 
 		// 2 - Search for the given id
 		
 		// 3 - Execute this query
-		
+		ResultSet employeeByName = st.executeQuery(query);
 		
 		// 4 - While there are some records, continue 
-		
+		String employeeName = "";
+		while (employeeByName.next()) {		
+			employeeName = 	employeeByName.getString(1) + " : " + 	
+					employeeByName.getString(2) + " : " +
+					employeeByName.getString(3) + " : " +
+					employeeByName.getInt(4);
+			System.out.println(employeeName);
+		}
 			con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -89,15 +107,24 @@ public class EmployeeJDBC {
 		try {
 		// 1 - Create a PreparedStatement with a query
 		
-
+		String query = "SELECT * FROM EMPLOYEES WHERE SALARY= '2000'";
+		PreparedStatement st = con.prepareStatement(query);
 		// 2 - Search for the given salary
 		
 
 		// 3 - Execute this query
-
+		ResultSet employeeBySalary = st.executeQuery(query);
 		
 		// 4 - While there are records, continue 
-
+		String employeeSalary = "";
+		while (employeeBySalary.next()) {		
+			employeeSalary = 	employeeBySalary.getString(1) + " : " + 	
+					employeeBySalary.getString(2) + " : " +
+					employeeBySalary.getString(3) + " : " +
+					employeeBySalary.getInt(4);
+			System.out.println(employeeSalary);
+		}
+		
 		con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -109,17 +136,25 @@ public class EmployeeJDBC {
 
 	public void insertEmployee(Employee emp)
 	{
+		try {
 		Connection con = createConnection();
 		
 		//1 - Create a PreparedStatement with a query "insert into employee values(?,?,?,?)" 
-		
+		String query = "insert into employees values (?,?,?,?)";
 		con.setAutoCommit(false);
 
 		//	Substitute the ? now.
-		
+	 query = "insert into employees values (4k,Helena,Mirray,2500)";
 		//2 - Execute this query using executeUpdate()
-			
-		System.out.println(rows + " row(s) added!");
+		PreparedStatement st = con.prepareStatement(query); 
+		st.setString(1, "4k");		
+		st.setString(2, "Helena");
+		st.setString(3, "Mirray");
+		st.setInt(4, 2500);
+		int count = st.executeUpdate();	
+		System.out.println(count + " row(s) added!");
+		
+		
 		con.commit();
 		con.close();
 		} catch (SQLException e) {
@@ -127,7 +162,7 @@ public class EmployeeJDBC {
 			e.printStackTrace();
 		}
 		
-
 	}
-
 }
+	
+

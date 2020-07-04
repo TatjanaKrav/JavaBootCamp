@@ -16,7 +16,7 @@ public class SetActivity {
 		//Do research to find if you already have such a class. 
 		//Also try adding a few duplicate entries to this set.
 		
-Set name = new HashSet();
+		Set name = new HashSet();
 		
 		
 		name.add("Andrej");

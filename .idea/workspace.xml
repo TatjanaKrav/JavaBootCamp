@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1061e6c7-d7d7-4393-a855-5b107de9467a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/SEF/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/bin/sef/module17/activity/EmployeeJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/bin/sef/module17/activity/EmployeeJDBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/bin/sef/module17/activity/EmployeeJDBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/bin/sef/module17/activity/EmployeeJDBCTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/bin/sef/module17/activity/Module 17 Activity - Test Scenarios and Conditions.xls" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/bin/sef/module17/activity/Module 17 Activity - Test Scenarios and Conditions.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module17/activity/EmployeeJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module17/activity/EmployeeJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEF/src/sef/module9/activity/SetActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/SEF/src/sef/module9/activity/SetActivity.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1e8LSu8ianafHQpYIg5js0heZXi" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1061e6c7-d7d7-4393-a855-5b107de9467a" name="Default Changelist" comment="" />
+      <created>1593698276330</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593698276330</updated>
+    </task>
+    <servers />
+  </component>
+</project>
